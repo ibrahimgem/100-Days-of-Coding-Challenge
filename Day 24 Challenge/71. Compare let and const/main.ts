@@ -1,0 +1,15 @@
+// Question 71: Compare let and const: Create two examples where let allows reassignment but const does not. Try to reassign a const-declared variable and catch the error.
+
+// Explain & TIP: let allows you to declare variables that can be reassigned, while const is for variables that should not change once set. Using const helps make your code safer and more predictable.
+
+let a = 1;
+a = 3;
+console.log(a);
+
+
+const b = 5;
+try {
+    b = 6
+} catch (error) {
+    console.log ("Error: Const-declared variables cannot reassigned.")
+}
